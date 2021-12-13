@@ -1,0 +1,79 @@
+{
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "responsive-react-accordion",
+  "author": "Gaurav konde",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gauravk2610/user-profile-avatar.git"
+  },
+  "homepage": "https://github.com/Gauravk2610/user-profile-avatar",
+  "keywords": [
+    "accordion",
+    "react",
+    "typescript",
+    "react-accordion",
+    "responsive",
+    "responsive-accordion",
+    "responsive-react-accordion",
+    "react-responsive accordion",
+    "awesome-accordion",
+    "collapsiable",
+    "react-collapsiable"
+  ],
+  "module": "dist/accordion.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/accordion.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/accordion.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.4",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "husky": "^7.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "size-limit": "^7.0.4",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.3"
+  }
+}
