@@ -1,4 +1,4 @@
-# User Profile Avatar
+# Responsive React Accordion
 
 ## Installation
 
