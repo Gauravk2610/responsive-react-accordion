@@ -67,11 +67,11 @@ export const Accordion = ({
         >
           {title}
           {/* Title */}{' '}
-          <div className="accordion-icon">{open ? open_Icon : close_Icon}</div>
+          <div className="accordion-icon">{!open ? open_Icon : close_Icon}</div>
         </AccordionTitle>
         <AccordionCollapsible
           className={`accordion-collapsible ${
-            !open ? 'accordion-active' : 'accordion-inactive'
+            open ? 'accordion-active' : 'accordion-inactive'
           }`}
         >
           {/* Content */}
